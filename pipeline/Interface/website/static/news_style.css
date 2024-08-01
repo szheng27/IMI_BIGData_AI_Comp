@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: url("micro-page-banner.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header{
+
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-decoration: none;
+    background: linear-gradient(to right,#163b36,#2c703f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+header a{
+    color:#2c703f;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px 16px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background, color;
+}
+
+header nav a:hover{
+    background: linear-gradient(to bottom,#163b36,#2c703f);
+    color: #fff;
+}
+
+.logo, nav{
+    transform: translateY(-70px);
+    transition: 0.8s;
+}
+
+.wrapper{
+    width: 1250px;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(30px);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+
+
+.wrapper .input-box{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+
+.input-box i{
+    position: relative;
+    left: 300px;
+    top: -35px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    border-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper2{
+    width: 450px;
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(30px);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    display: none;
+}
+
+.wrapper2 h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper2 h2{
+    font-size: 28px;
+    text-align: center;
+}
+

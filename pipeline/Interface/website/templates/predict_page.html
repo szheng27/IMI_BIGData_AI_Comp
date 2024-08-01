@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous"
+        />
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          crossorigin="anonymous"
+        />
+        <title>Predict Risk | Money Laundering Risk Predictor</title>
+        <link rel="stylesheet" href="../static/predict_style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body>
+
+        <header>
+            <a href="/contact" class="logo">Elefant</a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/explore">Explore</a>
+                <a href="/predict">Predict</a>
+                <a href="/find">Find Traffickers</a>
+                <a href="/model">Model</a>
+                <a href="/news">News Identifier</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </nav>
+        </header>
+
+        <div class ="wrapper">
+            <form method="POST">
+                <h1>Money Laundering Risk Probability Predictor</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Enter Name" name="name" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="gen">
+                    <select name="gender" id="gender" title="Gender" required>
+                        <option value='Male' selected>Male</option>
+                        <option value='Female'>Female</option>
+                    </select>
+                    <i class='bx bxs-down-arrow' ></i>
+                </div>
+                <div class="occup">
+                    <select name="occupation" id="occupation" title="Occupation" placeholder="Enter Occupation" required>
+                        <option value='Unknown' selected>Unknown</option>
+                        <option value='Actor'>Actor</option>
+<option value='Actuary'>Actuary</option>
+<option value='Anesthesiologist'>Anesthesiologist</option>
+<option value='Animal Trainer'>Animal Trainer</option>
+<option value='Antique Dealer'>Antique Dealer</option>
+<option value='Antiques Dealer'>Antiques Dealer</option>
+<option value='Arborist'>Arborist</option>
+<option value='Archaeologist'>Archaeologist</option>
+<option value='Architect'>Architect</option>
+<option value='Art Critic'>Art Critic</option>
+<option value='Art Dealer'>Art Dealer</option>
+<option value='Art Gallery Owner'>Art Gallery Owner</option>
+<option value='Art Historian'>Art Historian</option>
+<option value='Artist'>Artist</option>
+<option value='Astronomer'>Astronomer</option>
+<option value='Astrophysicist'>Astrophysicist</option>
+<option value='Auctioneer'>Auctioneer</option>
+<option value='Author'>Author</option>
+<option value='Auto Dealer'>Auto Dealer</option>
+<option value='Baker'>Baker</option>
+<option value='Banker'>Banker</option>
+<option value='Barista'>Barista</option>
+<option value='Bartender'>Bartender</option>
+<option value='Beekeeper'>Beekeeper</option>
+<option value='Bioengineer'>Bioengineer</option>
+<option value='Biologist'>Biologist</option>
+<option value='Book Editor'>Book Editor</option>
+<option value='Brewer'>Brewer</option>
+<option value='Bus Driver'>Bus Driver</option>
+<option value='Business Owner'>Business Owner</option>
+<option value='Butcher'>Butcher</option>
+<option value='Call Center Representative'>Call Center Representative</option>
+<option value='Car Dealership Owner'>Car Dealership Owner</option>
+<option value='Carpenter'>Carpenter</option>
+<option value='Cartographer'>Cartographer</option>
+<option value='Cartoonist'>Cartoonist</option>
+<option value='Cashier'>Cashier</option>
+<option value='Cash-intensive Business Owner (e.g., Laundromat)'>Cash-intensive Business Owner (e.g., Laundromat)</option>
+<option value='Casino Operator'>Casino Operator</option>
+<option value='Ceramicist'>Ceramicist</option>
+<option value='Chef'>Chef</option>
+<option value='Chemist'>Chemist</option>
+<option value='Childcare Worker'>Childcare Worker</option>
+<option value='Chiropractor'>Chiropractor</option>
+<option value='Choreographer'>Choreographer</option>
+<option value='Cicerone'>Cicerone</option>
+<option value='Civil Servant'>Civil Servant</option>
+<option value='Cleaner'>Cleaner</option>
+<option value='Coffee Roaster'>Coffee Roaster</option>
+<option value='Comic Book Artist'>Comic Book Artist</option>
+<option value='Commodity Broker'>Commodity Broker</option>
+<option value='Construction Contractor'>Construction Contractor</option>
+<option value='Construction Worker'>Construction Worker</option>
+<option value='Corporate Executive'>Corporate Executive</option>
+<option value='Cryoseismologist'>Cryoseismologist</option>
+<option value='Cryptocurrency Trader'>Cryptocurrency Trader</option>
+<option value='Curator'>Curator</option>
+<option value='Currency Exchange Owner'>Currency Exchange Owner</option>
+<option value='Dendrochronologist'>Dendrochronologist</option>
+<option value='Dentist'>Dentist</option>
+<option value='Dietician'>Dietician</option>
+<option value='Distiller'>Distiller</option>
+<option value='DJ'>DJ</option>
+<option value='Doctor'>Doctor</option>
+<option value='Economist'>Economist</option>
+<option value='Egyptologist'>Egyptologist</option>
+<option value='Electrician'>Electrician</option>
+<option value='Engineer'>Engineer</option>
+<option value='Enologist'>Enologist</option>
+<option value='Entomologist'>Entomologist</option>
+<option value='Environmental Scientist'>Environmental Scientist</option>
+<option value='Ethnobotanist'>Ethnobotanist</option>
+<option value='Ethnomusicologist'>Ethnomusicologist</option>
+<option value='Event Planner'>Event Planner</option>
+<option value='Factory Worker'>Factory Worker</option>
+<option value='Farm Laborer'>Farm Laborer</option>
+<option value='Farmer'>Farmer</option>
+<option value='Fashion Designer'>Fashion Designer</option>
+<option value='Fast Food Worker'>Fast Food Worker</option>
+<option value='Film Editor'>Film Editor</option>
+<option value='Filmmaker'>Filmmaker</option>
+<option value='Financial Advisor'>Financial Advisor</option>
+<option value='Firefighter'>Firefighter</option>
+<option value='Fisherman'>Fisherman</option>
+<option value='Fitness Trainer'>Fitness Trainer</option>
+<option value='Flight Attendant'>Flight Attendant</option>
+<option value='Florist'>Florist</option>
+<option value='Food Critic'>Food Critic</option>
+<option value='Food Scientist'>Food Scientist</option>
+<option value='Forester'>Forester</option>
+<option value='Free Trade Zone Operator'>Free Trade Zone Operator</option>
+<option value='Freelancer (e.g., Graphic Designer, Writer)'>Freelancer (e.g., Graphic Designer, Writer)</option>
+<option value='Game Developer'>Game Developer</option>
+<option value='Gardener'>Gardener</option>
+<option value='Gemologist'>Gemologist</option>
+<option value='Geologist'>Geologist</option>
+<option value='Glaciologist'>Glaciologist</option>
+<option value='Graphic Artist'>Graphic Artist</option>
+<option value='Graphologist'>Graphologist</option>
+<option value='Grocery Store Clerk'>Grocery Store Clerk</option>
+<option value='Hairstylist'>Hairstylist</option>
+<option value='Hedge Fund Manager'>Hedge Fund Manager</option>
+<option value='Herpetologist'>Herpetologist</option>
+<option value='High-End Real Estate Developer'>High-End Real Estate Developer</option>
+<option value='Historian'>Historian</option>
+<option value='Home Health Aide'>Home Health Aide</option>
+<option value='Hotelier'>Hotelier</option>
+<option value='Hydrologist'>Hydrologist</option>
+<option value='Ichthyologist'>Ichthyologist</option>
+<option value='Illustrator'>Illustrator</option>
+<option value='Import/Export Business Owner'>Import/Export Business Owner</option>
+<option value='Import/Export Dealer'>Import/Export Dealer</option>
+<option value='Interior Designer'>Interior Designer</option>
+<option value='International Consultant'>International Consultant</option>
+<option value='International Salesperson'>International Salesperson</option>
+<option value='Jewelry Dealer'>Jewelry Dealer</option>
+<option value='Journalist'>Journalist</option>
+<option value='Kinesiologist'>Kinesiologist</option>
+<option value='Landlord'>Landlord</option>
+<option value='Landscaper'>Landscaper</option>
+<option value='Lawyer'>Lawyer</option>
+<option value='Lepidopterist'>Lepidopterist</option>
+<option value='Librarian'>Librarian</option>
+<option value='Librarian Assistant'>Librarian Assistant</option>
+<option value='Librettist'>Librettist</option>
+<option value='Lifeguard'>Lifeguard</option>
+<option value='Limnologist'>Limnologist</option>
+<option value='Linguist'>Linguist</option>
+<option value='Literary Critic'>Literary Critic</option>
+<option value='Loan or Finance Company Owner'>Loan or Finance Company Owner</option>
+<option value='Local Fair Operator'>Local Fair Operator</option>
+<option value='Local Radio Operator'>Local Radio Operator</option>
+<option value='Luthier'>Luthier</option>
+<option value='Luxury Goods Dealer (e.g., Art, Jewelry)'>Luxury Goods Dealer (e.g., Art, Jewelry)</option>
+<option value='Luxury Yacht Broker'>Luxury Yacht Broker</option>
+<option value='Makeup Artist'>Makeup Artist</option>
+<option value='Malacologist'>Malacologist</option>
+<option value='Marine Biologist'>Marine Biologist</option>
+<option value='Marine Engineer'>Marine Engineer</option>
+<option value='Maritime or Shipping Agent'>Maritime or Shipping Agent</option>
+<option value='Massage Therapist'>Massage Therapist</option>
+<option value='Mechanic'>Mechanic</option>
+<option value='Meteorologist'>Meteorologist</option>
+<option value='Miner'>Miner</option>
+<option value='Money Service Business Owner'>Money Service Business Owner</option>
+<option value='Music Producer'>Music Producer</option>
+<option value='Musician'>Musician</option>
+<option value='Mycologist'>Mycologist</option>
+<option value='Nanny'>Nanny</option>
+<option value='Nematologist'>Nematologist</option>
+<option value='News Anchor'>News Anchor</option>
+<option value='Nightclub or Bar Owner'>Nightclub or Bar Owner</option>
+<option value='Non-profit Organization Director'>Non-profit Organization Director</option>
+<option value='Notary Public'>Notary Public</option>
+<option value='Numismatist'>Numismatist</option>
+<option value='Nurse'>Nurse</option>
+<option value='Nutritionist'>Nutritionist</option>
+<option value='Oceanographer'>Oceanographer</option>
+<option value='Offshore Investment Advisor'>Offshore Investment Advisor</option>
+<option value='Offshore Trustee'>Offshore Trustee</option>
+<option value='Online Gambling Site Operator'>Online Gambling Site Operator</option>
+<option value='Optometrist'>Optometrist</option>
+<option value='Ornithologist'>Ornithologist</option>
+<option value='Osteologist'>Osteologist</option>
+<option value='Other'>Other</option>
+<option value='Paleontologist'>Paleontologist</option>
+<option value='Paramedic'>Paramedic</option>
+<option value='Pastry Chef'>Pastry Chef</option>
+<option value='Pawn Shop Owner'>Pawn Shop Owner</option>
+<option value='Payment Processors Owner'>Payment Processors Owner</option>
+<option value='Pediatrician'>Pediatrician</option>
+<option value='Pedologist'>Pedologist</option>
+<option value='Pet Groomer'>Pet Groomer</option>
+<option value='Pharmacist'>Pharmacist</option>
+<option value='Philatelist'>Philatelist</option>
+<option value='Photographer'>Photographer</option>
+<option value='Physical Therapist'>Physical Therapist</option>
+<option value='Physicist'>Physicist</option>
+<option value='Pilot'>Pilot</option>
+<option value='Plumber'>Plumber</option>
+<option value='Police Officer'>Police Officer</option>
+<option value='Political Scientist'>Political Scientist</option>
+<option value='Postal Worker'>Postal Worker</option>
+<option value='Precious Metals Dealer'>Precious Metals Dealer</option>
+<option value='Printmaker'>Printmaker</option>
+<option value='Private Banker'>Private Banker</option>
+<option value='Private Equity Fund Manager'>Private Equity Fund Manager</option>
+<option value='Private Jet Broker'>Private Jet Broker</option>
+<option value='Private Security Company Owner'>Private Security Company Owner</option>
+<option value='Private Tutor'>Private Tutor</option>
+<option value='Property Manager'>Property Manager</option>
+<option value='Psychologist'>Psychologist</option>
+<option value='Radio Host'>Radio Host</option>
+<option value='Radiologist'>Radiologist</option>
+<option value='Real Estate Agent'>Real Estate Agent</option>
+<option value='Real Estate Broker'>Real Estate Broker</option>
+<option value='Receptionist'>Receptionist</option>
+<option value='Research Scientist'>Research Scientist</option>
+<option value='Retail Salesperson'>Retail Salesperson</option>
+<option value='Retired'>Retired</option>
+<option value='School Bus Driver'>School Bus Driver</option>
+<option value='School Teacher'>School Teacher</option>
+<option value='Sculptor'>Sculptor</option>
+<option value='Security Guard'>Security Guard</option>
+<option value='Seismologist'>Seismologist</option>
+<option value='Semiotician'>Semiotician</option>
+<option value='Set Designer'>Set Designer</option>
+<option value='Shell Company Operator'>Shell Company Operator</option>
+<option value='Sinologist'>Sinologist</option>
+<option value='Social Worker'>Social Worker</option>
+<option value='Sociologist'>Sociologist</option>
+<option value='Software Developer'>Software Developer</option>
+<option value='Sommelier'>Sommelier</option>
+<option value='Sound Engineer'>Sound Engineer</option>
+<option value='Sports Agent'>Sports Agent</option>
+<option value='Statistician'>Statistician</option>
+<option value='Stock Broker'>Stock Broker</option>
+<option value='Student'>Student</option>
+<option value='Surgeon'>Surgeon</option>
+<option value='Surveyor'>Surveyor</option>
+<option value='Tailor'>Tailor</option>
+<option value='Tattoo Artist'>Tattoo Artist</option>
+<option value='Tax Advisor'>Tax Advisor</option>
+<option value='Taxi Driver'>Taxi Driver</option>
+<option value='Telemarketer'>Telemarketer</option>
+<option value='Theater Director'>Theater Director</option>
+<option value='Therapist'>Therapist</option>
+<option value='Tour Guide'>Tour Guide</option>
+<option value='Translator'>Translator</option>
+<option value='Travel Agency Owner'>Travel Agency Owner</option>
+<option value='Travel Agent'>Travel Agent</option>
+<option value='Trust and Company Service Provider'>Trust and Company Service Provider</option>
+<option value='TV Producer'>TV Producer</option>
+<option value='Unemployed'>Unemployed</option>
+<option value='University Professor'>University Professor</option>
+<option value='Urban Planner'>Urban Planner</option>
+<option value='Venture Capitalist'>Venture Capitalist</option>
+<option value='Veterinarian'>Veterinarian</option>
+<option value='Veterinarian Assistant'>Veterinarian Assistant</option>
+<option value='Vexillologist'>Vexillologist</option>
+<option value='Videographer'>Videographer</option>
+<option value='Virtual Asset Service Providers'>Virtual Asset Service Providers</option>
+<option value='Voice Actor'>Voice Actor</option>
+<option value='Volcanologist'>Volcanologist</option>
+<option value='Waiter/Waitress'>Waiter/Waitress</option>
+<option value='Warehouse Worker'>Warehouse Worker</option>
+<option value='Wedding Planner'>Wedding Planner</option>
+<option value='Window Cleaner'>Window Cleaner</option>
+<option value='Zookeeper'>Zookeeper</option>
+                    </select>
+                    <i class='bx bxs-down-arrow' ></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="age" placeholder="Enter Age" required>
+                    <i class='bx bxs-cake' ></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="tenure" placeholder="Enter Tenure" required>
+                    <i class='bx bxs-briefcase' ></i>
+                </div>
+                <div class="opens">
+                    <select name="open_sanction" id="open_sanction" title="Open Sanction" placeholder="Enter Open Sanction Result" required>
+                        <option value=0 selected>No</option>
+                        <option value=1 >Yes</option>
+                    </select>
+                    <i class='bx bxs-down-arrow' ></i>
+                </div>
+                <button type="submit" class="btn">Predict</button>
+            </form>
+        </div>
+
+        <script type="text/javascript">
+            const logo = document.querySelector(".logo");
+            const nav = document.querySelector("nav");
+
+            window.addEventListener("load", () => {
+                logo.style.transform = "translateY(0)";
+                nav.style.transform = "translateY(0)";
+            });
+        </script>
+
+    <div class ="wrapper2">
+        <form method="POST">
+            {% if name is not none %}
+                <style>
+                    .wrapper2 {
+                        display: flex;
+                    }
+                </style>
+                <h2>Name: <b>{{name}}</b></h2>
+                <h2>Gender: <b>{{gender}}</b></h2>
+                <h2>Occupation: <b>{{occupation}}</b></h2>
+                <h2>Age: <b>{{age}}</b></h2>
+                <h2>Tenure: <b>{{tenure}}</b></h2>
+                <h2>Open Sanction: <b>{{open_sanction}}</b></h2>
+            {% endif %}
+        </form>
+    </div>
+    
+    <div class="riskoutput">
+        {% if prediction is not none %}
+            <style>
+                .riskoutput {
+                    display: flex;
+                }
+            </style>
+        {% endif %}
+        {% if prediction is not none %}
+        <h1 id="riskpercent">Risk Probability <b>{{prediction}}%</b></h1>
+        {% endif %}
+        {% if risk_color == 1 %}
+            <style>
+                .riskoutput {
+                    background: rgba(44,112,63,0.4);
+                }
+                .riskoutput h1{
+                    color: #2c703f;
+                }       
+            </style>
+            {% elif risk_color == 2 %}
+            <style>
+                .riskoutput {
+                    background: rgba(255,191,0,0.4);
+                }
+                .riskoutput h1{
+                    color: #ffbf00;
+                }  
+            </style>
+            {% elif risk_color == 3 %}
+            <style>
+                .riskoutput {
+                    background: rgba(255,0,0,0.4);
+                }
+                .riskoutput h1{
+                    color: red;
+                }  
+            </style>
+            {% endif %}
+    </div>
+    
+    </body>
+        
+</html>

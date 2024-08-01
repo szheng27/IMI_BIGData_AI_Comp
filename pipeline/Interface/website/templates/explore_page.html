@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous"
+        />
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          crossorigin="anonymous"
+        />
+        <title>Explore | Money Laundering Risk Predictor</title>
+        <link rel="stylesheet" href="../static/explore_style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <a href="/contact" class="logo">Elefant</a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/explore">Explore</a>
+                <a href="/predict">Predict</a>
+                <a href="/find">Find Traffickers</a>
+                <a href="/model">Model</a>
+                <a href="/news">News Identifier</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </nav>
+        </header>
+        <script type="text/javascript">
+            const logo = document.querySelector(".logo");
+            const nav = document.querySelector("nav");
+
+            window.addEventListener("load", () => {
+                logo.style.transform = "translateY(0)";
+                nav.style.transform = "translateY(0)";
+            });
+        </script>
+        <div class ="wrapper">
+            <form method="POST">
+                <h1>Money Laundering Risk Probability Predictor</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Enter Customer ID" name="cust_id" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <button type="submit" class="btn">Predict</button>
+            </form>
+        </div>
+        <div class ="wrapper2">
+            <form method="POST">
+                {% if name is not none %}
+                    <style>
+                        .wrapper2 {
+                            display: flex;
+                        }
+                    </style>
+                    <h2>Customer ID: <b>{{cust_id}}</b></h2>
+                    <h2>Name: <b>{{name}}</b></h2>
+                    <h2>Gender: <b>{{gender}}</b></h2>
+                    <h2>Occupation: <b>{{occupation}}</b></h2>
+                    <h2>Age: <b>{{age}}</b></h2>
+                    <h2>Tenure: <b>{{tenure}}</b></h2>
+                    <h2>Bad Actor: <b>{{label}}</b></h2>
+                    <h2>Identified in Open Sanction: <b>{{open_sanction}}</b></h2>
+                {% endif %}
+            </form>
+        </div>
+
+        <div class="riskoutput">
+            {% if prediction is not none %}
+            <style>
+                .riskoutput {
+                    display: flex;
+                }
+            </style>
+            <h1 id="riskpercent">Risk Probability <b>{{prediction}}%</b></h1>
+            {% endif %}
+            {% if risk_color == 1 %}
+            <style>
+                .riskoutput {
+                    background: rgba(44,112,63,0.4);
+                }
+                .riskoutput h1{
+                    color: #2c703f;
+                }       
+            </style>
+            {% elif risk_color == 2 %}
+            <style>
+                .riskoutput {
+                    background: rgba(255,191,0,0.4);
+                }
+                .riskoutput h1{
+                    color: #ffbf00;
+                }  
+            </style>
+            {% elif risk_color == 3 %}
+            <style>
+                .riskoutput {
+                    background: rgba(255,0,0,0.4);
+                }
+                .riskoutput h1{
+                    color: red;
+                }  
+            </style>
+            {% endif %}
+        </div>
+        <section class="edaimages">
+            <div class="eda">
+                <h2>Exploratory Data Analysis</h2>
+            </div>
+        <div class ="slider">
+            <div class ="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <input type="radio" name="radio-btn" id="radio6">
+                <input type="radio" name="radio-btn" id="radio7">
+                <div class="slide first">
+                    <img src="../static/Age_dist.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../static/Gender_dist.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../static/Occupation_dist.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../static/Tenure_dist.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../static/pie.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../static/pie_balanced.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../static/pie_repeated_names.png" alt="">
+                </div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                    <div class="auto-btn6"></div>
+                    <div class="auto-btn7"></div>
+                </div>
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+                <label for="radio6" class="manual-btn"></label>
+                <label for="radio7" class="manual-btn"></label>
+            </div>
+        </div>
+
+        </section>
+    </body>
+        
+</html>

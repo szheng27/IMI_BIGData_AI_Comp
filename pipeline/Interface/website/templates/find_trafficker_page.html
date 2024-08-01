@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous"
+        />
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          crossorigin="anonymous"
+        />
+        <title>Find Trafficker | Wildlife Trafficking & Money Laundering Identifier</title>
+        <link rel="stylesheet" href="../static/find_trafficking_style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <a href="/contact" class="logo">Elefant</a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/explore">Explore</a>
+                <a href="/predict">Predict</a>
+                <a href="/find">Find Traffickers</a>
+                <a href="/model">Model</a>
+                <a href="/news">News Identifier</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </nav>
+        </header>
+
+        <script type="text/javascript">
+            const logo = document.querySelector(".logo");
+            const nav = document.querySelector("nav");
+
+            window.addEventListener("load", () => {
+                logo.style.transform = "translateY(0)";
+                nav.style.transform = "translateY(0)";
+            });
+
+        </script>
+        <div class ="wrapper">
+            <form method="POST">
+                <h1>Open Sanction Identifier</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Enter Name" name="os_name" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <button type="submit" name='search_btn' class="btn">Search</button>
+            </form>
+        </div>
+        <div class ="wrapper2">
+            <form method="POST">
+                {% if name is not none %}
+                    <style>
+                        .wrapper2 {
+                            display: flex;
+                        }
+                    </style>
+                    <h2>Name: <b>{{name}}</b></h2>
+                    <h2>Identified in Open Sanction: <b>{{open_sanction}}</b></h2>
+                {% endif %}
+            </form>
+        </div>
+        <div class ="wrapper3">
+            <form method="POST">
+                <h1>Task 3 Identified Wildlife Criminals</h1>
+                <div class="task_3">
+                    <select name="t_3" id="t_3" title="Select Person" required>
+                        <option value='None' selected>None</option>
+                        <option value='DANIEL DYER'>DANIEL DYER</option>
+                        <option value='RANDALL WEHRKAMP'>RANDALL WEHRKAMP</option>
+                        <option value='CHRISTOPHER BROWN'>CHRISTOPHER BROWN</option>
+                        <option value='RYAN VAUGHN'>RYAN VAUGHN</option>
+                        <option value='JUSTIN WAGNER'>JUSTIN WAGNER</option>
+                        <option value='BRADLEY MITCHELL'>BRADLEY MITCHELL</option>
+                        <option value='RICHARD WATSON'>RICHARD WATSON</option>
+                        <option value='MICHEL BEAULIEU'>MICHEL BEAULIEU</option>
+                        <option value='VANESSA RONDEAU'>VANESSA RONDEAU</option>
+                        <option value='GRIGORI ZAHAROV'>GRIGORI ZAHAROV</option>
+                        <option value='DONALD LEE'>DONALD LEE</option>
+                        <option value='ZHOU HONG XIA'>ZHOU HONG XIA</option>
+                        <option value='JASON DAVID'>JASON DAVID</option>
+                        <option value='ANTHONY NGUYEN'>ANTHONY NGUYEN</option>
+                        <option value='CHRISTOPHER GROSS'>CHRISTOPHER GROSS</option>
+                        <option value='GREGORY LOGAN'>GREGORY LOGAN</option>
+                        <option value='JOHN WADE'>JOHN WADE</option>
+                        <option value='MICHEL LAROSE'>MICHEL LAROSE</option>
+                        <option value='KAI XU'>KAI XU</option>
+                        <option value='RANDY SCOTT'>RANDY SCOTT</option>
+                        <option value='JEFFREY ROSS'>JEFFREY ROSS</option>
+                        <option value='RICHARD AUSTIN'>RICHARD AUSTIN</option>
+                        <option value='ROLAND MARTIN'>ROLAND MARTIN</option>
+                        <option value='TONY GUAN'>TONY GUAN</option>
+                        <option value='ROBERT LITTLE'>ROBERT LITTLE</option>
+                        <option value='RYAN MILLAR'>RYAN MILLAR</option>
+                        <option value='WANG QIANG'>WANG QIANG</option>
+                        <option value='TIMOTHY LEWIS'>TIMOTHY LEWIS</option>
+                        <option value='CHRISTOPHER HAYES'>CHRISTOPHER HAYES</option>
+                        <option value='CODY SCOTT'>CODY SCOTT</option>
+                        <option value='ZACHARY FOWLER'>ZACHARY FOWLER</option>
+                        <option value='PATRICK SCOTT'>PATRICK SCOTT</option>
+                        <option value='JOSEPH KELLEY'>JOSEPH KELLEY</option>
+                        <option value='WILLIAM JOHNSTON'>WILLIAM JOHNSTON</option>
+                        <option value='KENNETH BAILEY'>KENNETH BAILEY</option>
+                        <option value='TERRY THOMPSON'>TERRY THOMPSON</option>
+                        <option value='KEVIN GILL'>KEVIN GILL</option>
+                        <option value='MARK HARRISON'>MARK HARRISON</option>
+                        <option value='STEVEN HAMMOND'>STEVEN HAMMOND</option>
+                        <option value='JUSTIN LOVE'>JUSTIN LOVE</option>
+                    </select>
+                    <i class='bx bxs-down-arrow' ></i>
+                </div>
+                <button type="submit" name='link_btn' class="btn">Show Article</button>
+            </form>
+        </div>
+            <div class ="wrapper4">
+                <form method="POST">
+                    {% if t_3 is not none %}
+                        <style>
+                            .wrapper4 {
+                                display: flex;
+                            }
+                        </style>
+                        <h2>Name: <b>{{t_3}}</b></h2>
+                        <h2>News Article Link: <b><a href={{link}} target="_blank">{{link}}</a></b></h2>
+                    {% endif %}
+                </form>
+            </div>
+    </body>
+</html>

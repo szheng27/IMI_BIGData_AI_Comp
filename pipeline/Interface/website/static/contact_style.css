@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    overflow: auto;
+    overflow-x: hidden;
+    background: url("micro-page-banner.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-decoration: none;
+    background: linear-gradient(to right,#163b36,#2c703f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+header a{
+    color:#2c703f;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px 16px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background, color;
+}
+
+header nav a:hover{
+    background: linear-gradient(to bottom,#163b36,#2c703f);
+    color: #fff;
+}
+
+
+.logo, nav{
+    transform: translateY(-70px);
+    transition: 0.8s;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home:before{
+    content: '';
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to top,#2c703f,transparent);
+    bottom: 0;
+}
+
+.info{
+    z-index: 8;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.info .h2{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4em;
+    background: linear-gradient(to right,#163b36,#2c703f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    width: 360px;
+    margin-bottom: 30px;
+}
+
+.info .paragraph{
+    color: #163b36;
+    font-size: 1.2em;
+    width: 50%;
+    margin-bottom: 40px;
+    text-align: center;
+}
