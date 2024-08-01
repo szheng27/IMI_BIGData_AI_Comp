@@ -24,7 +24,7 @@
   <p align="center">
     2023-2024 IMI Big Data and Artificial Intelligence Competition
     <br />
-    <a href="https://github.com/knamdar/IMI_BIGData_AI_Comp/tree/master/documents"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/szheng27/IMI_BIGData_AI_Comp"><strong>Explore the docs »</strong></a>
     <br />
     <br />
   </p>
@@ -52,12 +52,13 @@
 <!-- ABOUT THE PROJECT -->
 ## The Team
 
-* Safwat Khan
-* Zekai Li
+
 * Ernest Namdar
+* Safwat Khan
+* Steven Zheng
 * Tushar Raju
 * Pin-Chien Wang
-* Steven Zheng
+* Zekai Li
 
 
 
@@ -100,10 +101,10 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contacts
 
-* Ernest Namdar - [@LinkedIn](https://www.linkedin.com/in/ernest-namdar/) - ernest.namdar@utoronto.ca
+* Steven Zheng- [@LinkedIn](https://www.linkedin.com/in/sz-steven/) - stevenn.zheng@rotman.utoronto.ca
 * Tushar Raju - [@LinkedIn](https://www.linkedin.com/in/tushar-raju/) - tushar.raju@rotman.utoronto.ca
 
-Project Link: [https://github.com/knamdar/IMI_BIGData_AI_Comp](https://github.com/knamdar/IMI_BIGData_AI_Comp)
+Project Link: [https://github.com/szheng27/IMI_BIGData_AI_Comp](https://github.com/szheng27/IMI_BIGData_AI_Comp)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
