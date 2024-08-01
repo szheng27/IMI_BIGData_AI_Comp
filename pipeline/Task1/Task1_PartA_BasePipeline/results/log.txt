@@ -1,0 +1,5 @@
+base pipeline (DT):
+AUC score: 0.592312122609415
+
+base pipeline (DT), balanced dataset:
+AUC score: 0.6782392519665562
