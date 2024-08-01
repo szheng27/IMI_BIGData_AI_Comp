@@ -1,0 +1,104 @@
+Column: Name
+Unique Values: ['JENNIFER WELLS' 'ANTHONY ADAMS' 'DENISE LEWIS' ... 'CHERYL SCHULTZ'
+ 'NICOLE-CÉCILE LEBLANC' 'CATHERINE ARMSTRONG']
+Count of Unique Values: 145393
+--------------------------------------------------
+Column: Gender
+Unique Values: ['female' 'male' 'other']
+Count of Unique Values: 3
+--------------------------------------------------
+Column: Occupation
+Unique Values: ['Architect' 'Musician' 'Jewelry Dealer' 'Optometrist'
+ 'Real Estate Broker' 'Sommelier' 'Stock Broker' 'Antiques Dealer'
+ 'School Teacher' 'Bus Driver' 'Choreographer' 'Postal Worker'
+ 'Call Center Representative' 'Butcher' 'Import/Export Dealer' 'Student'
+ 'Software Developer' 'Banker'
+ 'Freelancer (e.g., Graphic Designer, Writer)' 'Carpenter'
+ 'Local Fair Operator' 'Geologist' 'Other' 'Lawyer' 'Firefighter'
+ 'Offshore Trustee' 'Printmaker' 'Dietician' 'Warehouse Worker'
+ 'Pawn Shop Owner' 'High-End Real Estate Developer' 'Gardener'
+ 'Childcare Worker' 'Game Developer' 'Retail Salesperson'
+ 'International Salesperson' 'Biologist' 'Private Banker' 'Pet Groomer'
+ 'Cashier' 'Police Officer' 'Auto Dealer' 'Barista' 'Hotelier'
+ 'Psychologist' 'Retired' 'Factory Worker' 'Film Editor' 'Ichthyologist'
+ 'Nanny' 'Doctor' 'Research Scientist' 'Unemployed' 'Landscaper'
+ 'Property Manager' 'Private Jet Broker' 'Astrophysicist' 'Tattoo Artist'
+ 'Waiter/Waitress' 'Political Scientist' 'Chiropractor' 'Artist'
+ 'Fashion Designer' 'Theater Director' 'Chemist' 'Pedologist'
+ 'Business Owner' 'Construction Contractor' 'Wedding Planner'
+ 'Receptionist' 'Engineer' 'Cartoonist' 'Dentist' 'Fast Food Worker'
+ 'Veterinarian' 'Civil Servant' 'Home Health Aide' 'Real Estate Agent'
+ 'Bartender' 'Sculptor' 'Hydrologist' 'Pediatrician' 'Gemologist'
+ 'Malacologist' 'Nurse' 'Art Critic' 'Taxi Driver' 'Art Gallery Owner'
+ 'Commodity Broker' 'School Bus Driver' 'Tour Guide' 'Chef'
+ 'Environmental Scientist' 'Veterinarian Assistant' 'Landlord'
+ 'Urban Planner' 'Grocery Store Clerk' 'Window Cleaner' 'Art Dealer'
+ 'Pharmacist' 'Graphic Artist' 'University Professor' 'Cleaner' 'Actor'
+ 'Librarian Assistant' 'Journalist' 'Historian' 'Farmer' 'Sound Engineer'
+ 'Unknown' 'Venture Capitalist' 'Sports Agent' 'Baker' 'Bioengineer'
+ 'Fitness Trainer' 'Cartographer' 'Car Dealership Owner'
+ 'Private Equity Fund Manager' 'Limnologist' 'Auctioneer' 'Therapist'
+ 'Distiller' 'Hairstylist' 'Telemarketer' 'Electrician'
+ 'Ethnomusicologist' 'Trust and Company Service Provider' 'Animal Trainer'
+ 'Brewer' 'Interior Designer' 'Literary Critic' 'Financial Advisor'
+ 'Librarian' 'Pastry Chef' 'Hedge Fund Manager' 'Ceramicist' 'Mechanic'
+ 'Antique Dealer' 'Currency Exchange Owner' 'Actuary' 'Plumber' 'Linguist'
+ 'Construction Worker' 'Florist' 'Set Designer' 'Illustrator' 'Zookeeper'
+ 'Massage Therapist' 'Tailor' 'Economist' 'Librettist'
+ 'Physical Therapist' 'Paleontologist' 'Radiologist' 'Security Guard'
+ 'Notary Public' 'Tax Advisor' 'Food Scientist' 'Food Critic'
+ 'Private Security Company Owner' 'Vexillologist' 'Luthier' 'Beekeeper'
+ 'Non-profit Organization Director' 'Meteorologist' 'Archaeologist'
+ 'Herpetologist' 'Cash-intensive Business Owner (e.g., Laundromat)'
+ 'Private Tutor' 'Ethnobotanist' 'Astronomer' 'Farm Laborer'
+ 'Virtual Asset Service Providers' 'Music Producer' 'Sociologist'
+ 'Social Worker' 'Oceanographer' 'Makeup Artist' 'Local Radio Operator'
+ 'Photographer' 'Graphologist' 'Forester' 'Voice Actor'
+ 'Import/Export Business Owner' 'Event Planner' 'Nightclub or Bar Owner'
+ 'Curator' 'Filmmaker' 'Marine Engineer' 'Offshore Investment Advisor'
+ 'Translator' 'Flight Attendant' 'Physicist' 'Kinesiologist'
+ 'Travel Agent' 'Corporate Executive' 'Fisherman' 'Enologist'
+ 'Dendrochronologist' 'Numismatist' 'Cicerone' 'Marine Biologist'
+ 'Online Gambling Site Operator' 'Videographer' 'Paramedic'
+ 'Coffee Roaster' 'Maritime or Shipping Agent' 'International Consultant'
+ 'Art Historian' 'Surgeon' 'Statistician' 'Luxury Yacht Broker'
+ 'Glaciologist' 'Comic Book Artist' 'Loan or Finance Company Owner'
+ 'Pilot' 'Lifeguard' 'Ornithologist' 'Precious Metals Dealer'
+ 'Anesthesiologist' 'Payment Processors Owner' 'TV Producer'
+ 'Casino Operator' 'Radio Host' 'Volcanologist' 'Free Trade Zone Operator'
+ 'Miner' 'News Anchor' 'Arborist' 'DJ' 'Seismologist' 'Book Editor'
+ 'Nematologist' 'Author' 'Travel Agency Owner' 'Osteologist'
+ 'Luxury Goods Dealer (e.g., Art, Jewelry)' 'Nutritionist' 'Sinologist'
+ 'Egyptologist' 'Semiotician' 'Cryptocurrency Trader'
+ 'Money Service Business Owner' 'Surveyor' 'Entomologist'
+ 'Shell Company Operator' 'Lepidopterist' 'Mycologist' 'Philatelist'
+ 'Cryoseismologist']
+Count of Unique Values: 250
+--------------------------------------------------
+Column: Age
+Unique Values: [45. 52. 43. 35. 39. 26. 29. 23. 47. 37. 28. 32. 34. 21. 19. 20. 33. 40.
+ 59. 55. 25. 51. 48. 36. 18. 44. 22. 24. 31. 50. 38. 41. 54. 27. 30. 65.
+ 57. 53. 46. 49. 42. 63. 58. 64. 75. 70. 60. 74. 90. 69. 56. 72. 71. 61.
+ 62. 66. 68. 78. 76. 67. 73. 80. 79. 81. 85. 77. 84. 82. 83. 87. 88. 91.
+ 92. 86. 89.]
+Count of Unique Values: 75
+--------------------------------------------------
+Column: Tenure
+Unique Values: [13.  8. 11. 17. 21.  5. 10.  7. 15.  0.  3.  1.  2. 16.  9.  4. 25. 18.
+  6. 14. 20. 12. 22. 24. 27. 33. 23. 26. 19. 39. 28. 31. 37. 36. 40. 32.
+ 34. 35. 29. 30. 38. 44. 49. 42. 43. 41. 45. 46. 48.]
+Count of Unique Values: 49
+--------------------------------------------------
+Column: cust_id
+Unique Values: ['CUST82758793' 'CUST69248708' 'CUST67222818' ... 'CUST26444112'
+ 'CUST96567835' 'CUST87775775']
+Count of Unique Values: 195789
+--------------------------------------------------
+Column: label
+Unique Values: [0 1]
+Count of Unique Values: 2
+--------------------------------------------------
+
+
+****cust_ids are all unique (n_rows in the DF = 195789)
+***there are repeated names
