@@ -1,0 +1,36 @@
+running RF with default hyperparams on balanced Dataset
+experiment1 stats (mean, sd, 5stats): [0.7475513104864472, 0.00740128500021017, 0.7334597382859658, 0.7422897037002126, 0.7467116600029298, 0.7537751814750673, 0.7585376417195373]
+The run was completed in:  0 minutes and  21 seconds
+running RF with hyperparam tuning on balanced Dataset
+Woring on experiment# 0
+Woring on experiment# 1
+Woring on experiment# 2
+Woring on experiment# 3
+Woring on experiment# 4
+Woring on experiment# 5
+Woring on experiment# 6
+Woring on experiment# 7
+Woring on experiment# 8
+Woring on experiment# 9
+Woring on experiment# 10
+Woring on experiment# 11
+Woring on experiment# 12
+Woring on experiment# 13
+Woring on experiment# 14
+Woring on experiment# 15
+Woring on experiment# 16
+Woring on experiment# 17
+Woring on experiment# 18
+Woring on experiment# 19
+Woring on experiment# 20
+Woring on experiment# 21
+Woring on experiment# 22
+Woring on experiment# 23
+Woring on experiment# 24
+Woring on experiment# 25
+Woring on experiment# 26
+Woring on experiment# 27
+Woring on experiment# 28
+Woring on experiment# 29
+experiment2 stats (mean, sd, 5stats): [0.766779177453984, 0.006877559682229365, 0.7479605229228699, 0.7626175878984888, 0.768219878292443, 0.7721783614027486, 0.7772587793170238]
+The run was completed in:  123 minutes and  19 seconds

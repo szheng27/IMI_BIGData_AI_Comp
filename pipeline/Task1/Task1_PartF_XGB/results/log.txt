@@ -1,0 +1,66 @@
+running RF with hyperparam tuning on balanced Dataset
+Woring on experiment# 0
+Woring on experiment# 1
+Woring on experiment# 2
+Woring on experiment# 3
+Woring on experiment# 4
+Woring on experiment# 5
+Woring on experiment# 6
+Woring on experiment# 7
+Woring on experiment# 8
+Woring on experiment# 9
+Woring on experiment# 10
+Woring on experiment# 11
+Woring on experiment# 12
+Woring on experiment# 13
+Woring on experiment# 14
+Woring on experiment# 15
+Woring on experiment# 16
+Woring on experiment# 17
+Woring on experiment# 18
+Woring on experiment# 19
+Woring on experiment# 20
+Woring on experiment# 21
+Woring on experiment# 22
+Woring on experiment# 23
+Woring on experiment# 24
+Woring on experiment# 25
+Woring on experiment# 26
+Woring on experiment# 27
+Woring on experiment# 28
+Woring on experiment# 29
+experiment1 stats (mean, sd, 5stats): [0.7706990091077297, 0.007868401024595083, 0.7499810536885837, 0.7661139563774765, 0.7716150055102012, 0.77549224826193, 0.7832453471725126]
+The run was completed in:  123 minutes and  27 seconds
+running XGB with hyperparam tuning on balanced Dataset
+Woring on experiment# 0
+Woring on experiment# 1
+Woring on experiment# 2
+Woring on experiment# 3
+Woring on experiment# 4
+Woring on experiment# 5
+Woring on experiment# 6
+Woring on experiment# 7
+Woring on experiment# 8
+Woring on experiment# 9
+Woring on experiment# 10
+Woring on experiment# 11
+Woring on experiment# 12
+Woring on experiment# 13
+Woring on experiment# 14
+Woring on experiment# 15
+Woring on experiment# 16
+Woring on experiment# 17
+Woring on experiment# 18
+Woring on experiment# 19
+Woring on experiment# 20
+Woring on experiment# 21
+Woring on experiment# 22
+Woring on experiment# 23
+Woring on experiment# 24
+Woring on experiment# 25
+Woring on experiment# 26
+Woring on experiment# 27
+Woring on experiment# 28
+Woring on experiment# 29
+experiment2 stats (mean, sd, 5stats): [0.862220551277115, 0.005840815570348815, 0.8487769644088222, 0.86066433591615, 0.8628110506954443, 0.8647874831422642, 0.8765684781944945]
+The run was completed in:  62 minutes and  42 seconds

@@ -1,0 +1,46 @@
+running XGB with MonteCarlo Data Split
+Woring on experiment# 0
+Woring on experiment# 1
+Woring on experiment# 2
+Woring on experiment# 3
+Woring on experiment# 4
+Woring on experiment# 5
+Woring on experiment# 6
+Woring on experiment# 7
+Woring on experiment# 8
+Woring on experiment# 9
+Woring on experiment# 10
+Woring on experiment# 11
+Woring on experiment# 12
+Woring on experiment# 13
+Woring on experiment# 14
+Woring on experiment# 15
+Woring on experiment# 16
+Woring on experiment# 17
+Woring on experiment# 18
+Woring on experiment# 19
+Woring on experiment# 20
+Woring on experiment# 21
+Woring on experiment# 22
+Woring on experiment# 23
+Woring on experiment# 24
+Woring on experiment# 25
+Woring on experiment# 26
+Woring on experiment# 27
+Woring on experiment# 28
+Woring on experiment# 29
+experiment1 stats (mean, sd, 5stats): [0.8593245539028924, 0.007060019886743383, 0.8447848265959844, 0.8558768991867415, 0.8591483079334257, 0.8634859333737049, 0.872146642598138]
+The run was completed in:  61 minutes and  4 seconds
+running XGB with kfold cv
+Woring on fold# 0
+Woring on fold# 1
+Woring on fold# 2
+Woring on fold# 3
+Woring on fold# 4
+Woring on fold# 5
+Woring on fold# 6
+Woring on fold# 7
+Woring on fold# 8
+Woring on fold# 9
+experiment2 stats (mean, sd, 5stats): [0.8631812845726339, 0.008069121627311705, 0.8522238069044568, 0.8589192245982272, 0.8609922012677871, 0.8657192785186354, 0.8794289215121163]
+The run was completed in:  6 minutes and  24 seconds

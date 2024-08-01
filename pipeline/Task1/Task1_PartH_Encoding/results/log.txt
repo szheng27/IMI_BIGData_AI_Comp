@@ -1,0 +1,26 @@
+running XGB with label encoding
+Woring on fold# 0
+Woring on fold# 1
+Woring on fold# 2
+Woring on fold# 3
+Woring on fold# 4
+Woring on fold# 5
+Woring on fold# 6
+Woring on fold# 7
+Woring on fold# 8
+Woring on fold# 9
+experiment1 stats (mean, sd, 5stats): [0.858355664917565, 0.012495585119037571, 0.8441075514874141, 0.8462961787625147, 0.8580758962623951, 0.8676685505931244, 0.8824328641868768]
+The run was completed in:  6 minutes and  40 seconds
+running XGB with one hot
+Woring on fold# 0
+Woring on fold# 1
+Woring on fold# 2
+Woring on fold# 3
+Woring on fold# 4
+Woring on fold# 5
+Woring on fold# 6
+Woring on fold# 7
+Woring on fold# 8
+Woring on fold# 9
+experiment2 stats (mean, sd, 5stats): [0.8686584384161916, 0.008780069223364348, 0.8535446194182497, 0.8628876351298035, 0.869567207393533, 0.8730519608616745, 0.8819701991109709]
+The run was completed in:  10 minutes and  54 seconds
