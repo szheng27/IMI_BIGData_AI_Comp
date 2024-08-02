@@ -1,0 +1,22 @@
+AUC score: 0.962574350278131
+best_params are: {'n_estimators': 200, 'learning_rate': 0.2, 'num_leaves': 31, 'max_depth': 5, 'reg_lambda': 1, 'max_bin': 510, 'boosting_type': 'gbdt', 'objective': 'binary', 'metric': 'auc', 'is_unbalance': True, 'random_state': 0}
+Model saved to ../results/lgbm_model.txt
+
+note: massive grid search
+no finetuning on random state
+
+
+v2 featureeng
+AUC score: 0.9623720147480119
+best_params are: {'n_estimators': 200, 'learning_rate': 0.2, 'num_leaves': 62, 'max_depth': 5, 'reg_lambda': 1, 'max_bin': 510, 'boosting_type': 'gbdt', 'objective': 'binary', 'metric': 'auc', 'is_unbalance': True, 'random_state': 0}
+
+
+v3 featureeng_with country (spreadsheet
+AUC score: 0.9623720147480119
+best_params are: {'n_estimators': 200, 'learning_rate': 0.2, 'num_leaves': 62, 'max_depth': 5, 'reg_lambda': 1, 'max_bin': 510, 'boosting_type': 'gbdt', 'objective': 'binary', 'metric': 'auc', 'is_unbalance': True, 'random_state': 0}
+Model saved to ../results/lgbm_model.txt)
+
+v4 accuracy-based
+AUC score: 0.9605156665510464
+best_params are: {'n_estimators': 200, 'learning_rate': 0.1, 'num_leaves': 31, 'max_depth': -1, 'reg_lambda': 0, 'max_bin': 255, 'boosting_type': 'gbdt', 'objective': 'binary', 'metric': 'auc', 'is_unbalance': True, 'random_state': 0}
+Model saved to ../results/lgbm_model.txt

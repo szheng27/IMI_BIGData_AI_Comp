@@ -1,0 +1,6 @@
+AUC score: 0.962574350278131
+best_params are: {'n_estimators': 200, 'learning_rate': 0.2, 'num_leaves': 31, 'max_depth': 5, 'reg_lambda': 1, 'max_bin': 510, 'boosting_type': 'gbdt', 'objective': 'binary', 'metric': 'auc', 'is_unbalance': True, 'random_state': 0}
+Model saved to ../results/lgbm_model.txt
+
+note: massive grid search
+no finetuning on random state
